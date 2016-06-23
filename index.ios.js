@@ -26,11 +26,11 @@ class AwesomeProject extends Component {
           source={{uri: movie.posters.thumbnail}}
           style={styles.thumbnail}
         />
-        <View>
-          <Text>
+        <View style={styles.rigthContainer}>
+          <Text style={styles.title}>
             {movie.title}
           </Text>
-          <Text>
+          <Text style={styles.year}>
             {movie.year}
           </Text>
         </View>
@@ -42,6 +42,7 @@ class AwesomeProject extends Component {
 var styles = StyleSheet.create({
   container: {
     flex: 1,
+    flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
@@ -49,6 +50,18 @@ var styles = StyleSheet.create({
   thumbnail: {
     width: 53,
     height: 81,
+    backgroundColor: '#000000',
+  },
+  rigthContainer: {
+    flex: 1,
+  },
+  title: {
+    fontSize: 20,
+    marginBottom: 8,
+    textAlign: 'center',
+  },
+  year: {
+    textAlign: 'center',
   },
 });
 
