@@ -7,9 +7,10 @@
 import React, { Component } from 'react';
 import {
   AppRegistry,
+  Image,
+  ListView,
   StyleSheet,
   Text,
-  Image,
   View,
 } from 'react-native';
 
